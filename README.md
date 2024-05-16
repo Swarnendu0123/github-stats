@@ -5,7 +5,6 @@ Set all your github issues and pull-request in one place.
 GitHub: https://github.com/Swarnendu0123/github-stats
 NPM: https://www.npmjs.com/package/@swarnendu0123/github-stats
 
-
 - `getPulls` : Function Get all the pull requests of a repository
 
 - `getIssues` : Function Get all the issues of a repository
@@ -55,12 +54,25 @@ function MyComponent() {
       });
   }, []);
 
+  //  title,
+  // url,
+  // openedBy,
+  // issueLabel,
+  // status: "open"
+
   return (
     <div>
-      {issues.map((issue) => (
-        <div key={issue.id}>
-          <h3>{issue.title}</h3>
-          <p>{issue.body}</p>
+      {issues.map((index, issue) => (
+        <div key={index}>
+          <h1>{issue.title}</h1>
+          <p>{issue.url}</p>
+          <p>{issue.openedBy}</p>
+          <p>
+            {issue.issueLabel.map((label) => (
+              <span>{label}</span>
+            ))}
+          </p>
+          <p>{issue.status}</p>
         </div>
       ))}
     </div>
