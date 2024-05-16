@@ -1,12 +1,11 @@
 # github-stats
 
-Set all your github issues and pull-request in one place.
+Get all your github issues and pull-request in one place.
 
-GitHub: https://github.com/Swarnendu0123/github-stats
-NPM: https://www.npmjs.com/package/@swarnendu0123/github-stats
+- GitHub: https://github.com/Swarnendu0123/github-stats
+- NPM: https://www.npmjs.com/package/@swarnendu0123/github-stats
 
 - `getPulls` : Function Get all the pull requests of a repository
-
 - `getIssues` : Function Get all the issues of a repository
 
 ## Installation:

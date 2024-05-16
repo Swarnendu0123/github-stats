@@ -2,7 +2,7 @@ import { Issue } from "./types";
 const axios = require('axios');
 const cheerio = require('cheerio')
 
-export const getIssues = async (repoUrl: string) => {
+export const getIssues = async (repoUrl: string, by?: string) => {
     try {
         const response = await axios.get(`${repoUrl}/issues`);
         const $ = cheerio.load(response.data)
@@ -24,8 +24,10 @@ export const getIssues = async (repoUrl: string) => {
                 issueLabel,
                 status: "open"
             });
-
         });
+        if (by) {
+            return issues.filter(issue => issue.openedBy === by)
+        }
         return issues;
     } catch (error) {
         console.error(error);
@@ -33,7 +35,7 @@ export const getIssues = async (repoUrl: string) => {
 }
 
 
-export const getPulls = async (repoUrl: string) => {
+export const getPulls = async (repoUrl: string, by?: string) => {
     try {
         const response = await axios.get(`${repoUrl}/pulls`);
         const $ = cheerio.load(response.data)
@@ -55,7 +57,9 @@ export const getPulls = async (repoUrl: string) => {
                 issueLabel,
                 status: "open"
             });
-
+            if (by) {
+                return pulls.filter(pull => pull.openedBy === by)
+            }
         });
         return pulls;
     } catch (error) {
