@@ -1,0 +1,19 @@
+{
+  "name": "@swarnendu0123/github-stats",
+  "version": "1.0.0",
+  "description": "A module to get all the open pull request/issues in a CURD application",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts"
+  },
+  "author": "swarnendu",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12"
+  }
+}
