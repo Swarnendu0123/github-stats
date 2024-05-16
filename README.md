@@ -32,7 +32,7 @@ stats
 
 ```js
 const stats = require("@swarnendu0123/github-stats");
-const myPulls = await stats.getIssues(
+const myPulls = await stats.getPulls(
   "https://github.com/processing/processing-website"
 );
 console.log(myPulls);
