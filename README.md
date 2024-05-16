@@ -54,12 +54,6 @@ function MyComponent() {
       });
   }, []);
 
-  //  title,
-  // url,
-  // openedBy,
-  // issueLabel,
-  // status: "open"
-
   return (
     <div>
       {issues.map((index, issue) => (
