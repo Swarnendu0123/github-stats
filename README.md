@@ -1,9 +1,13 @@
 # github-stats
 
-Set all your github issues and pull-request in one place
+Set all your github issues and pull-request in one place.
 
-`getPulls` : Function Get all the pull requests of a repository
-`getIssues` : Function Get all the issues of a repository
+GitHub: https://github.com/Swarnendu0123/github-stats
+
+
+- `getPulls` : Function Get all the pull requests of a repository
+
+- `getIssues` : Function Get all the issues of a repository
 
 ## Installation:
 
