@@ -2,6 +2,18 @@
 
 Get all your github issues and pull-request in one place.
 
+![NPM Version](https://img.shields.io/npm/v/@swarnendu0123/github-stats)
+![NPM Downloads](https://img.shields.io/npm/dt/@swarnendu0123/github-stats)
+![GitHub Repo size](https://img.shields.io/github/repo-size/Swarnendu0123/github-stats)
+
+![NPM License](https://img.shields.io/npm/l/@swarnendu0123/github-stats)
+![GitHub Repo issues](https://img.shields.io/github/issues/Swarnendu0123/github-stats)
+![GitHub Repo pull requests](https://img.shields.io/github/issues-pr/Swarnendu0123/github-stats)
+
+![Contributors](https://img.shields.io/github/contributors/Swarnendu0123/github-stats)
+![GitHub Repo stars](https://img.shields.io/github/stars/Swarnendu0123/github-stats)
+![GitHub Repo forks](https://img.shields.io/github/forks/Swarnendu0123/github-stats)
+
 - GitHub: https://github.com/Swarnendu0123/github-stats
 - NPM: https://www.npmjs.com/package/@swarnendu0123/github-stats
 
@@ -33,6 +45,18 @@ stats
 const stats = require("@swarnendu0123/github-stats");
 const myPulls = await stats.getPulls(
   "https://github.com/processing/processing-website"
+);
+console.log(myPulls);
+```
+
+
+- `by (Optional)`: The user who created the pull request/issue . If not provided, it will return all the pull requests.
+
+```js
+const stats = require("@swarnendu0123/github-stats");
+const myPulls = await stats.getPulls(
+  "https://github.com/processing/processing-website",
+  "Swarnendu0123"
 );
 console.log(myPulls);
 ```
