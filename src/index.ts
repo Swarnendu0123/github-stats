@@ -57,10 +57,10 @@ export const getPulls = async (repoUrl: string, by?: string) => {
                 issueLabel,
                 status: "open"
             });
-            if (by) {
-                return pulls.filter(pull => pull.openedBy === by)
-            }
         });
+        if (by) {
+            return pulls.filter(pull => pull.openedBy === by)
+        }
         return pulls;
     } catch (error) {
         console.error(error);
