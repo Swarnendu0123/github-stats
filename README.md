@@ -74,3 +74,24 @@ function MyComponent() {
 
 export default MyComponent;
 ```
+
+## Keywords
+
+- `github-stats`
+- `github`
+- `stats`
+- `issues`
+- `pulls`
+- `github-issues`
+- `github-pulls`
+- `github-stats`
+- `github-api`
+- `github-issues-api`
+- `github-pulls-api`
+- `github-stats-api`
+- `github-issues-pulls`
+- `github-issues-pulls-stats`
+- `github-issues-pulls-stats-api`
+- `github-issues-pulls-stats-npm`
+- `github-issues-pulls-stats-npm-package`
+- `github-issues-pulls-stats-npm-package-api`

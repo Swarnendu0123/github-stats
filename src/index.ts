@@ -1,4 +1,4 @@
-import { Issue } from "./types";
+import { Issue, PullRequest } from "./types";
 const axios = require('axios');
 const cheerio = require('cheerio')
 
@@ -39,7 +39,7 @@ export const getPulls = async (repoUrl: string, by?: string) => {
     try {
         const response = await axios.get(`${repoUrl}/pulls`);
         const $ = cheerio.load(response.data)
-        const pulls: Issue[] = []
+        const pulls: PullRequest[] = []
         $('.js-issue-row').each((i: Number, elem: string) => {
             const title = $(elem).find('.js-navigation-open').text().trim();
             const url = "https://github.com" + $(elem).find('.js-navigation-open').attr('href');

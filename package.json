@@ -1,7 +1,7 @@
 {
   "name": "@swarnendu0123/github-stats",
-  "version": "1.0.6",
-  "description": "A module to get all the open pull request/issues in a CURD application",
+  "version": "1.0.7",
+  "description": "A npm package to get all the open pull request/issues in a CURD application",
   "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon src/index.ts"
