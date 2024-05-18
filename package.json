@@ -1,6 +1,6 @@
 {
   "name": "@swarnendu0123/github-stats",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "A npm package to get all the open pull request/issues in a CURD application",
   "main": "dist/index.js",
   "scripts": {
